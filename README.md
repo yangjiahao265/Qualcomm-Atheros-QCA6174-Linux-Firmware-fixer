@@ -1,4 +1,7 @@
 # Qualcomm-Atheros-QCA6174-Linux-Firmware-fixer
+
+## 用于修复红米笔记本安装Ubuntu操作系统后无法使用wifi的Bug
+
 ## Background information
 I bought a Xiaomi Redmibook in december to be used as my travel laptop because of its weight and dimensions. I installed Linux right away, but after trying different distros I settled down with Linux Mint Tricia 19.3. Anyway, with Mint 19.3 and every other distro I tried (including Ubuntu 18.04, 19.04, 19.10, Debian Buster, PopOs and Arch), I had problems getting the WiFi card to work, in particular giving commands like iwconfing, and ifconfig wouldn't even show the wireless interface, furthermore by going into the network settings via GUI also there it would show a WiFi interface. I tried several solutions, including but not limited to, changing kernels and doind some other strange experiments. 
 In the end I finaly found some traces around the web that the problem might be the actual drivers for said wifi card that were not correct. I tried swapping those included in linux firmware and renaming the new one accordingly and automagically the wifi card started working.
